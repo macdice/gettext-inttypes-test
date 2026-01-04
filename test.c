@@ -9,11 +9,11 @@
 int
 main()
 {
-		setlocale(LC_MESSAGES, "es_ES.UTF-8");
-		bindtextdomain("foo", "./locale");
-		textdomain("foo");
+	setlocale(LC_MESSAGES, "es_ES.UTF-8");
+	bindtextdomain("foo", "./locale");
+	textdomain("foo");
 
-		/* Extracted from https://github.com/postgres/postgres/blob/master/src/test/regress/regress.c */
+	/* Extracted from https://github.com/postgres/postgres/blob/master/src/test/regress/regress.c */
         println("translated PRId64 = %" PRId64, (int64_t) 424242424242);
         println("translated PRId32 = %" PRId32, (int32_t) -1234);
         println("translated PRIdMAX = %" PRIdMAX, (intmax_t) -123456789012);
