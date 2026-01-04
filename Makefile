@@ -5,7 +5,7 @@
 
 # Make sure the msgfmt binary under test is in $PATH
 
-MSGDIR=locale/es_ES.UTF-8/LC_MESSAGES
+MSGDIR=locale/es/LC_MESSAGES
 
 check: test $(MSGDIR)/foo.mo
 	./test | diff -u expected.txt -
